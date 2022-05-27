@@ -17,6 +17,12 @@ def disks_list():
     for partition in psutil.disk_partitions():
     	click.echo("Device: {}, Mountpoint: {}, FSType: {}, Opts: {}".format(partition.device, partition.mountpoint, partition.fstype, partition.opts))
 
+@main.command()
+def detect_os():
+    """Detect what os is given"""
+    pass
+
+
 if __name__ == '__main__':
     args = sys.argv
     # if "--help" in args or len(args) == 1:
