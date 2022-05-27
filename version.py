@@ -10,7 +10,7 @@ from src.DetectModule.MacDetector import MacDetector
 def is_enabled_fv(path, os):
     """Detect file version is enabled"""
     if os == 'win10':
-    	detector = Windows10Detector(path)
+        detector = Windows10Detector(path)
     elif os == 'win7':
         detector = Windows7Detector(path)
     elif os == 'macOS':
